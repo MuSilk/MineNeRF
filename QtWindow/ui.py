@@ -1,0 +1,92 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'MainWindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MineNeRF(object):
+    def setupUi(self, MineNeRF):
+        MineNeRF.setObjectName("MineNeRF")
+        MineNeRF.resize(828, 608)
+        self.centralwidget = QtWidgets.QWidget(MineNeRF)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName("gridLayout")
+        self.verticalWidget = QtWidgets.QWidget(self.centralwidget)
+        self.verticalWidget.setMaximumSize(QtCore.QSize(200, 16777215))
+        self.verticalWidget.setSizeIncrement(QtCore.QSize(0, 0))
+        self.verticalWidget.setObjectName("verticalWidget")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.verticalWidget)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.SliderZ = QtWidgets.QSlider(self.verticalWidget)
+        self.SliderZ.setMinimumSize(QtCore.QSize(0, 30))
+        self.SliderZ.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.SliderZ.setOrientation(QtCore.Qt.Horizontal)
+        self.SliderZ.setObjectName("SliderZ")
+        self.gridLayout_2.addWidget(self.SliderZ, 3, 1, 1, 1)
+        self.LableZ = QtWidgets.QLabel(self.verticalWidget)
+        self.LableZ.setObjectName("LableZ")
+        self.gridLayout_2.addWidget(self.LableZ, 3, 0, 1, 1)
+        self.SliderX = QtWidgets.QSlider(self.verticalWidget)
+        self.SliderX.setMinimumSize(QtCore.QSize(0, 30))
+        self.SliderX.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.SliderX.setOrientation(QtCore.Qt.Horizontal)
+        self.SliderX.setObjectName("SliderX")
+        self.gridLayout_2.addWidget(self.SliderX, 0, 1, 1, 1)
+        self.LabelY = QtWidgets.QLabel(self.verticalWidget)
+        self.LabelY.setObjectName("LabelY")
+        self.gridLayout_2.addWidget(self.LabelY, 2, 0, 1, 1)
+        self.LabelX = QtWidgets.QLabel(self.verticalWidget)
+        self.LabelX.setObjectName("LabelX")
+        self.gridLayout_2.addWidget(self.LabelX, 0, 0, 1, 1)
+        self.SliderY = QtWidgets.QSlider(self.verticalWidget)
+        self.SliderY.setMinimumSize(QtCore.QSize(0, 30))
+        self.SliderY.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.SliderY.setOrientation(QtCore.Qt.Horizontal)
+        self.SliderY.setObjectName("SliderY")
+        self.gridLayout_2.addWidget(self.SliderY, 2, 1, 1, 1)
+        self.SliderVoxelSize = QtWidgets.QSlider(self.verticalWidget)
+        self.SliderVoxelSize.setMinimumSize(QtCore.QSize(0, 30))
+        self.SliderVoxelSize.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.SliderVoxelSize.setOrientation(QtCore.Qt.Horizontal)
+        self.SliderVoxelSize.setObjectName("SliderVoxelSize")
+        self.gridLayout_2.addWidget(self.SliderVoxelSize, 5, 0, 1, 2)
+        self.LabelVoxelSize = QtWidgets.QLabel(self.verticalWidget)
+        self.LabelVoxelSize.setObjectName("LabelVoxelSize")
+        self.gridLayout_2.addWidget(self.LabelVoxelSize, 4, 0, 1, 2)
+        self.Export = QtWidgets.QPushButton(self.verticalWidget)
+        self.Export.setMinimumSize(QtCore.QSize(0, 20))
+        self.Export.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.Export.setObjectName("Export")
+        self.gridLayout_2.addWidget(self.Export, 6, 0, 1, 2)
+        self.gridLayout.addWidget(self.verticalWidget, 0, 2, 1, 1, QtCore.Qt.AlignTop)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.grid_display = QtWidgets.QGridLayout()
+        self.grid_display.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
+        self.grid_display.setObjectName("grid_display")
+        self.horizontalLayout.addLayout(self.grid_display)
+        self.horizontalLayout.setStretch(0, 3)
+        self.gridLayout.addLayout(self.horizontalLayout, 0, 0, 1, 1)
+        MineNeRF.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MineNeRF)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 828, 19))
+        self.menubar.setObjectName("menubar")
+        MineNeRF.setMenuBar(self.menubar)
+
+        self.retranslateUi(MineNeRF)
+        QtCore.QMetaObject.connectSlotsByName(MineNeRF)
+
+    def retranslateUi(self, MineNeRF):
+        _translate = QtCore.QCoreApplication.translate
+        MineNeRF.setWindowTitle(_translate("MineNeRF", "MainWindow"))
+        self.LableZ.setText(_translate("MineNeRF", "Z:"))
+        self.LabelY.setText(_translate("MineNeRF", "Y:"))
+        self.LabelX.setText(_translate("MineNeRF", "X:"))
+        self.LabelVoxelSize.setText(_translate("MineNeRF", "Voxel Size:"))
+        self.Export.setText(_translate("MineNeRF", "Export"))
+
